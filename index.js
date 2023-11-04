@@ -5,6 +5,8 @@ const port = 3000;
 
 
 app.get("/test/", (request, response) => {
+    console.log("Received a GET request");
+
     response.json({
         message: "Hello world!"
     });
